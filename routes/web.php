@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -18,15 +19,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/auth/redirect', function () {
-    return Socialite::driver('google')->redirect();
-});
+Route::redirect('home', 'dashboard');
 
-Route::get('/auth/callback', function () {
-    $user = Socialite::driver('google')->user();
-    $id = $user->id;
-    $email = $user->email;
-    $name = $user->name;
+Route::get('/auth', [AuthController::class, 'index'])->name('login')->middleware('guest');
+Route::get('/auth/redirect', [AuthController::class, 'redirect'])->middleware('guest');
+Route::get('/auth/callback', [AuthController::class, 'callback'])->middleware('guest');
+Route::get('/auth/logout', [AuthController::class, "logout"]);
 
-    return "$id - $email - $name";
-});
+Route::get('/dashboard', function () {
+    return 'Selamat datang '.Auth::user()->email.' di Dashboard';
+})->middleware('auth');
