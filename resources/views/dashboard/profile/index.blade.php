@@ -14,9 +14,26 @@
                     <input type="file" class="form-control form-control-sm" name="_foto" id="_foto">
                 </div>
                 <div class="mb-3">
+                    <label for="_desc" class="form-label">Deskripsi Diri</label>
+                    <textarea name="_desc" id="_desc" cols="55" rows="10" class="form-control-sm">
+                        {{ get_meta_value('_desc') }}
+                    </textarea>
+                </div>
+                <div class="mb-3">
                     <label for="_kota" class="form-label">Kota</label>
                     <input type="text" class="form-control form-control-sm" name="_kota" id="_kota"
                         value="{{ get_meta_value('_kota') }}">
+                </div>
+                <div class="mb-3">
+                    <label for="_posisi" class="form-label">Posisi</label>
+                    <input type="text" class="form-control form-control-sm" name="_posisi" id="_posisi"
+                        value="{{ get_meta_value('_posisi') }}">
+                </div>
+                <div class="mb-3">
+                    <label for="_desc_posisi" class="form-label">Deskripsi Posisi</label>
+                    <textarea name="_desc_posisi" id="_desc_posisi" cols="55" rows="10" class="form-control-sm">
+                        {{ get_meta_value('_desc_posisi') }}
+                    </textarea>
                 </div>
                 <div class="mb-3">
                     <label for="_provinsi" class="form-label">Provinsi</label>
@@ -33,7 +50,6 @@
                     <input type="text" class="form-control form-control-sm" name="_email" id="_email"
                         value="{{ get_meta_value('_email') }}">
                 </div>
-
             </div>
             <div class="col-5">
                 <h3>Akun Media Sosial</h3>
@@ -48,6 +64,11 @@
                         value="{{ get_meta_value('_twitter') }}">
                 </div>
                 <div class="mb-3">
+                    <label for="_instagram" class="form-label">Instagram</label>
+                    <input type="text" class="form-control form-control-sm" name="_instagram" id="_instagram"
+                        value="{{ get_meta_value('_instagram') }}">
+                </div>
+                <div class="mb-3">
                     <label for="_linkedin" class="form-label">Linkedin</label>
                     <input type="text" class="form-control form-control-sm" name="_linkedin" id="_linkedin"
                         value="{{ get_meta_value('_linkedin') }}">
@@ -56,6 +77,22 @@
                     <label for="_github" class="form-label">Github</label>
                     <input type="text" class="form-control form-control-sm" name="_github" id="_github"
                         value="{{ get_meta_value('_github') }}">
+                </div>
+                <div class="mb-5">
+                    <label for="_gitlab" class="form-label">Gitlab</label>
+                    <input type="text" class="form-control form-control-sm" name="_gitlab" id="_gitlab"
+                        value="{{ get_meta_value('_gitlab') }}">
+                </div>
+                <h3>Biodata</h3>
+                <div class="mb-3">
+                    <label for="_tgl_lahir" class="form-label">Tanggal Lahir</label>
+                    <input type="date" class="form-control form-control-sm" name="_tgl_lahir" id="_tgl_lahir"
+                        value="{{ get_meta_value('_tgl_lahir') }}">
+                </div>
+                <div class="mb-3">
+                    <label for="_umur" class="form-label">Umur</label>
+                    <input type="text" class="form-control form-control-sm" name="_umur" id="_umur"
+                        value="{{ get_meta_value('_umur') }}">
                 </div>
             </div>
         </div>

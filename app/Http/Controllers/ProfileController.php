@@ -39,14 +39,21 @@ class ProfileController extends Controller
 
         Metadata::updateOrCreate(['meta_key' => '_email'], ['meta_value' => $request->_email]);
         Metadata::updateOrCreate(['meta_key' => '_kota'], ['meta_value' => $request->_kota]);
+        Metadata::updateOrCreate(['meta_key' => '_posisi'], ['meta_value' => $request->_posisi]);
+        Metadata::updateOrCreate(['meta_key' => '_desc_posisi'], ['meta_value' => $request->_desc_posisi]);
         Metadata::updateOrCreate(['meta_key' => '_provinsi'], ['meta_value' => $request->_provinsi]);
+        Metadata::updateOrCreate(['meta_key' => '_tgl_lahir'], ['meta_value' => $request->_tgl_lahir]);
+        Metadata::updateOrCreate(['meta_key' => '_umur'], ['meta_value' => $request->_umur]);
         Metadata::updateOrCreate(['meta_key' => '_nohp'], ['meta_value' => $request->_nohp]);
 
 
         Metadata::updateOrCreate(['meta_key' => '_facebook'], ['meta_value' => $request->_facebook]);
         Metadata::updateOrCreate(['meta_key' => '_twitter'], ['meta_value' => $request->_twitter]);
+        Metadata::updateOrCreate(['meta_key' => '_instagram'], ['meta_value' => $request->_instagram]);
         Metadata::updateOrCreate(['meta_key' => '_linkedin'], ['meta_value' => $request->_linkedin]);
         Metadata::updateOrCreate(['meta_key' => '_github'], ['meta_value' => $request->_github]);
+        Metadata::updateOrCreate(['meta_key' => '_gitlab'], ['meta_value' => $request->_gitlab]);
+        Metadata::updateOrCreate(['meta_key' => '_desc'], ['meta_value' => $request->_desc]);
 
         return redirect()->route('profile.index')->with('success', 'Berhasil update data profile');
     }

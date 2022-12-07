@@ -19,11 +19,11 @@
         <div class="form-group row">
             <label class="col-sm-2">Interest</label>
             <div class="col-sm-6">
-                <select class="form-control form-control-sm" name="_halaman_interest">
+                <select class="form-control form-control-sm" name="_halaman_skill">
                     <option value="">-pilih-</option>
                     @foreach ($datahalaman as $item)
                         <option value="{{ $item->id }}"
-                            {{ get_meta_value('_halaman_interest') == $item->id ? 'selected' : '' }}>
+                            {{ get_meta_value('_halaman_skill') == $item->id ? 'selected' : '' }}>
                             {{ $item->judul }}</option>
                     @endforeach
                 </select>
