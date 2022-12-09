@@ -236,7 +236,7 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/me6.jpg");
+    background: url("../img/me9.jpg");
     background-position: top center;
     background-size: cover;
 }
@@ -636,6 +636,10 @@ section {
     transition: all ease-in-out 0.3s;
     display: flex;
     justify-content: center;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
@@ -645,6 +649,10 @@ section {
     background: rgba(20, 157, 221, 0.75);
     transition: 0.3s;
     width: 50%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transtion: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -660,7 +668,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 1;
+    opacity: .5;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-links {

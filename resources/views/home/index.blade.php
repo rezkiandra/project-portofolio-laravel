@@ -9,8 +9,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('kyy') }}/assets/img/favicon.png" rel="icon">
-    <link href="{{ asset('kyy') }}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    {{-- <link href="{{ asset('kyy') }}/assets/img/favicon.png" rel="icon">
+    <link href="{{ asset('kyy') }}/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> --}}
 
     {{-- Devicons --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -478,7 +478,7 @@
                                 <h4>No. Telp</h4>
                                 <p>{{ get_meta_value('_nohp') }}</p>
                             </div>
-                            <iframe src="https://goo.gl/maps/49WvXsejpuGGbiH26" frameborder="0"
+                            <iframe src="https://api.mapbox.com/styles/v1/mapbox/streets-v12.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA#17.31/1.367955/109.306187" frameborder="20"
                                 style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
                         </div>
                     </div>
