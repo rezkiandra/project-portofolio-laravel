@@ -41,8 +41,7 @@
     <header id="header">
         <div class="d-flex flex-column">
             <div class="profile">
-                <img src="{{ asset('kyy') }}/assets/img/profile-img.jpg" alt=""
-                    class="img-fluid rounded-circle">
+                <img src="{{ asset('kyy') }}/assets/img/side3.jpg" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light"><a href="/">{{ $about->judul }}</a></h1>
                 <div class="social-links mt-3 text-center">
                     <a href="{{ get_meta_value('_twitter') }}" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -88,7 +87,8 @@
 
                 <div class="row">
                     <div class="col-lg-4" data-aos="fade-right">
-                        <img src="{{ asset('kyy') }}/assets/img/profile-img.jpg" class="img-fluid" alt="">
+                        <img src="{{ asset('kyy') }}/assets/img/side.jpg" class="img-fluid"
+                            style="box-shadow: 0 0 10px #aaaaaa">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                         <h3>{{ get_meta_value('_posisi') }}</h3>
@@ -237,8 +237,101 @@
                     </div>
                 </div>
 
+                <div class="section-title mt-5">
+                    <h2>Layanan</h2>
+                    <p>Layanan yang saya sediakan saat membuat project agar client lebih percaya terhadap saya</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">CRUD Details</h4>
+                                <p class="card-description">
+                                    Detail mengenai project CRUD
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Jenis</th>
+                                                <th>Fitur</th>
+                                                <th>Desain</th>
+                                                <th>Revisi</th>
+                                                <th>Harga</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Klasik</td>
+                                                <td>-</td>
+                                                <td>3 Warna</td>
+                                                <td>1x</td>
+                                                <td>Rp. 120.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Premium</td>
+                                                <td>Responsive</td>
+                                                <td>5 Warna</td>
+                                                <td>3x</td>
+                                                <td>Rp. 250.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Eksklusif</td>
+                                                <td>Responsive</td>
+                                                <td>7 Warna</td>
+                                                <td>Unlimited</td>
+                                                <td>Rp. 400.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Daftar Client</h4>
+                                <p class="card-description">
+                                    Nama client yang pernah membeli website saya
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Nama</th>
+                                                <th>Jenis</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Suhari</td>
+                                                <td>Premium</td>
+                                                <td>Berhasil</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Syahrul</td>
+                                                <td>Klasik</td>
+                                                <td>Berhasil</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aldy</td>
+                                                <td>Eksklusif</td>
+                                                <td>Berhasil</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section><!-- End Resume Section -->
+
+
 
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio section-bg">
@@ -254,8 +347,8 @@
                     <div class="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
                             <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
+                            <li data-filter=".filter-app">Ubuntu</li>
+                            <li data-filter=".filter-card">Mobile</li>
                             <li data-filter=".filter-web">Web</li>
                         </ul>
                     </div>
@@ -265,13 +358,10 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('kyy') }}/assets/img/portfolio/portfolio-1.jpg" class="img-fluid"
-                                alt="">
+                            <img src="{{ asset('kyy') }}/assets/img/ubuntu1.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                <a href="{{ asset('kyy') }}/portfolio-details.blade.php" title="More Details"><i
-                                        class="bx bx-link"></i></a>
+                                <a href="{{ asset('kyy') }}/assets/img/ubuntu1.png" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Ubuntu 1"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -282,34 +372,26 @@
                             <div class="portfolio-links">
                                 <a href="{{ asset('kyy') }}/assets/img/1.png" data-gallery="portfolioGallery"
                                     class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                <a href="{{ asset('kyy') }}/portfolio-details.blade.php" title="More Details"><i
-                                        class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('kyy') }}/assets/img/portfolio/portfolio-3.jpg" class="img-fluid"
-                                alt="">
+                            <img src="{{ asset('kyy') }}/assets/img/ubuntu2.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                <a href="{{ asset('kyy') }}/portfolio-details.blade.php" title="More Details"><i
-                                        class="bx bx-link"></i></a>
+                                <a href="{{ asset('kyy') }}/assets/img/ubuntu2.png" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Ubuntu 2"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('kyy') }}/assets/img/portfolio/portfolio-4.jpg" class="img-fluid"
-                                alt="">
+                            <img src="{{ asset('kyy') }}/assets/img/mobile3.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                                <a href="{{ asset('kyy') }}/portfolio-details.blade.php" title="More Details"><i
-                                        class="bx bx-link"></i></a>
+                                <a href="{{ asset('kyy') }}/assets/img/mobile3.png" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Mobile 3"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -320,47 +402,36 @@
                             <div class="portfolio-links">
                                 <a href="{{ asset('kyy') }}/assets/img/2.png" data-gallery="portfolioGallery"
                                     class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                                <a href="{{ asset('kyy') }}/portfolio-details.blade.php" title="More Details"><i
-                                        class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('kyy') }}/assets/img/portfolio/portfolio-6.jpg" class="img-fluid"
-                                alt="">
+                            <img src="{{ asset('kyy') }}/assets/img/ubuntu3.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                                <a href="{{ asset('kyy') }}/portfolio-details.blade.php" title="More Details"><i
-                                        class="bx bx-link"></i></a>
+                                <a href="{{ asset('kyy') }}/assets/img/ubuntu3.png" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Ubuntu 3"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('kyy') }}/assets/img/portfolio/portfolio-7.jpg" class="img-fluid"
-                                alt="">
+                            <img src="{{ asset('kyy') }}/assets/img/mobile2.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                                <a href="{{ asset('kyy') }}/portfolio-details.blade.php" title="More Details"><i
-                                        class="bx bx-link"></i></a>
+                                <a href="{{ asset('kyy') }}/assets/img/mobile2.png" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Mobile 2"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('kyy') }}/assets/img/portfolio/portfolio-8.jpg" class="img-fluid"
-                                alt="">
+                            <img src="{{ asset('kyy') }}/assets/img/mobile1.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                                <a href="{{ asset('kyy') }}/portfolio-details.blade.php" title="More Details"><i
-                                        class="bx bx-link"></i></a>
+                                <a href="{{ asset('kyy') }}/assets/img/mobile1.png" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Mobile 1"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -371,8 +442,6 @@
                             <div class="portfolio-links">
                                 <a href="{{ asset('kyy') }}/assets/img/3.png" data-gallery="portfolioGallery"
                                     class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                <a href="{{ asset('kyy') }}/portfolio-details.blade.php" title="More Details"><i
-                                        class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>

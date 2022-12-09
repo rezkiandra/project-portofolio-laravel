@@ -10,6 +10,8 @@ use App\Http\Controllers\HalamanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EducationController;
 use App\Http\Controllers\ExperienceController;
+use App\Http\Controllers\Link;
+use App\Http\Controllers\LinkController;
 use App\Http\Controllers\PengaturanHalamanController;
 
 // Route::get('/', function () {
@@ -39,3 +41,5 @@ Route::prefix('dashboard')->middleware('auth')->group(
         Route::post('pengaturanhalaman', [PengaturanHalamanController::class, "update"])->name('pengaturanhalaman.update');
     }
 );
+
+Route::get('/portfolio-details.blade.php', [LinkController::class, 'index']);
