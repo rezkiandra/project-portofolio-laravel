@@ -9,8 +9,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    {{-- <link href="{{ asset('kyy') }}/assets/img/favicon.png" rel="icon">
-    <link href="{{ asset('kyy') }}/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> --}}
+    <link href="{{ asset('kyy') }}/assets/img/favicon.png" rel="icon">
+    <link href="{{ asset('kyy') }}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     {{-- Devicons --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -42,7 +42,7 @@
         <div class="d-flex flex-column">
             <div class="profile">
                 <img src="{{ asset('kyy') }}/assets/img/side3.jpg" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="/">{{ $about->judul }}</a></h1>
+                <h1 class="text-light text-uppercase"><a href="/">{{ $about->judul }}</a></h1>
                 <div class="social-links mt-3 text-center">
                     <a href="{{ get_meta_value('_twitter') }}" class="twitter"><i class="bx bxl-twitter"></i></a>
                     <a href="{{ get_meta_value('_gitlab') }}" class="twitter"><i class="bx bxl-gitlab"></i></a>
@@ -54,15 +54,15 @@
 
             <nav id="navbar" class="nav-menu navbar">
                 <ul>
-                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home text-light"></i>
                             <span>Beranda</span></a></li>
-                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Tentang</span></a>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user text-light"></i> <span>Tentang</span></a>
                     </li>
-                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank text-light"></i>
                             <span>Riwayat</span></a></li>
-                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content text-light"></i>
                             <span>Portofolio</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope text-light"></i>
                             <span>Hubungi</span></a></li>
                 </ul>
             </nav><!-- .nav-menu -->
@@ -72,7 +72,7 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="hero-container" data-aos="fade-in">
-            <h1>I am Kyy</h1>
+            <h1 class="fw-bolder">I am Kyy</h1>
             <p>A <span class="typed" data-typed-items="Student, Web Developer, Photographer, Web Designer"></span></p>
         </div>
     </section><!-- End Hero -->
@@ -87,7 +87,7 @@
 
                 <div class="row">
                     <div class="col-lg-4" data-aos="fade-right">
-                        <img src="{{ asset('kyy') }}/assets/img/side.jpg" class="img-fluid"
+                        <img src="{{ asset('kyy') }}/assets/img/side.jpg" class="img-fluid rounded shadow-lg border"
                             style="box-shadow: 0 0 10px #aaaaaa">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
